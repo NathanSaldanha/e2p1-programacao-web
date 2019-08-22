@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Contador de palavras</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo">BEM VINDO</a>
+        </div>
+    </nav>
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br>
+            <br>
+            <h1 class="header center orange-text">Contador de Palavras</h1>
+            <div class="row center">
+                <h5 class="header col s12 light">Digite ou cole o texto no campo abaixo:</h5>
+            </div>
+            <form>
+ 
+                <form id="formulario" method="post" action="">
+                    <fieldset>
+                        <div class="row">
+                            <div class="col s12">
+
+                                <legend>Contador de Palavras</legend>
+                                <label for="icon_prefix2">Texto</label>
+                                <i class="material-icons prefix">mode_edit</i>
+                                <input onkeyup="contar(this.value)"  type="text" id="nome" size="53" tabindex="1" />
+
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+                <br>
+            </form>
+            <br>
+            <br>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <center>
+            <div id="quantidadeform">
+                <input value="0 Palavras" type="text" id="quantidade1" size="33" />
+            </div>
+        </center>
+        <br>
+        <br>
+    </div>
+
+    <footer class="page-footer orange">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Empresa IFCE</h5>
+                    <p class="grey-text text-lighten-4">Nosso principal objetivo é fornecer um site para usuario que tenham duvidas sobre a quantidade de palavras que esta sendo digitado.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by: <a class="orange-text text-lighten-3" href="https://ifce.edu.br/">Instituto Federal do Ceará</a>
+            </div>
+        </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/principal.js"></script>
+
+</body>
+
+</html>
